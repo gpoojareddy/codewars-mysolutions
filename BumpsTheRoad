@@ -1,0 +1,11 @@
+public class BumpsTheRoad {
+  public static String bumps(final String road) {
+  char[] arr = road.toCharArray();
+  int count=0;
+  for(int i = 0; i < arr.length ; i++){
+    if(arr[i] == 'n')
+     count++; // counts number of bumps
+  }
+    return count>15 ? "Car Dead" : "Woohoo!";  
+  }
+}
